@@ -2,7 +2,8 @@
 A simple Gui Calculator created with Java.
 
 The project will create a simple Gui calculator.  
-The calculator will accept two numeric inputs, provide a drop down menu to select from:
+
+The calculator will accept two numeric inputs and provide a drop down menu to select from the options:
 Add, Subtract, Multiply, Divide.
 
 The calculator includes a Caculate button, and a simple "Answer" display.
