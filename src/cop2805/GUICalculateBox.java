@@ -81,23 +81,27 @@ class MyFrame extends JFrame {
 	        		
 	        		double firstNum = Double.parseDouble(first);
 	        		double secondNum = Double.parseDouble(second);
-	        		double answer= 0.0;
+	        		double answer = 0.0;
+	        		char symbol;
 	        		
 	        		if (i == "Add") {
         				answer = firstNum + secondNum;
+        				symbol = '+';
         			} else if (i == "Subtract") {
         				answer = firstNum - secondNum;
+        				symbol = '-';
         			} else if (i == "Multiply") {
         				answer = firstNum * secondNum;
+        				symbol = '*';
         			} else {
         				answer = (firstNum / secondNum) + (firstNum % secondNum);
+        				symbol = '/';
         			}
 	        		
 	        		String answerNum = String.valueOf(answer);
 	        		
-	        		//String data = first + " + " + second + " = " + answerNum;
-	        		String data = "Answer = " + answerNum;
-	        		
+	        		String data = first + " " + symbol + " " + second + " = " + answerNum;
+	        			        		
 	        		result.setText(data);
 
 	        	}
